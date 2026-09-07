@@ -1,0 +1,67 @@
+{
+    "name": "jeffersongoncalves/laravel-hotjar",
+    "description": "This Laravel package seamlessly integrates Hotjar into your Blade templates. Easily capture heatmaps, session recordings, and feedback directly within your Laravel application, providing valuable insights into your website's user experience. This package simplifies the integration process, saving you time and effort. With minimal configuration, you can leverage Hotjar's powerful behavior analytics features to gain a clearer understanding of your audience and website usage.",
+    "keywords": [
+        "jeffersongoncalves",
+        "laravel",
+        "laravel-hotjar"
+    ],
+    "homepage": "https://github.com/jeffersongoncalves/laravel-hotjar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2|^8.3|^8.4",
+        "laravel/framework": "^12.61.1|^13.12.0",
+        "spatie/laravel-package-tools": "^1.14.0",
+        "spatie/laravel-settings": "^3.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.27",
+        "orchestra/testbench": "^10.0|^11.0",
+        "pestphp/pest": "^3.7.4|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeffersonGoncalves\\Hotjar\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeffersonGoncalves\\Hotjar\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeffersonGoncalves\\Hotjar\\HotjarServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

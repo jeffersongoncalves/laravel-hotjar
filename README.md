@@ -1,13 +1,13 @@
 <div class="filament-hidden">
 
-![Laravel Hotjar](https://raw.githubusercontent.com/jeffersongoncalves/laravel-hotjar/master/art/jeffersongoncalves-laravel-hotjar.png)
+![Laravel Hotjar](https://raw.githubusercontent.com/jeffersongoncalves/laravel-hotjar/main/art/jeffersongoncalves-laravel-hotjar.png)
 
 </div>
 
 # Laravel Hotjar
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/laravel-hotjar.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/laravel-hotjar)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/laravel-hotjar/fix-php-code-style-issues.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/laravel-hotjar/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/laravel-hotjar/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/laravel-hotjar/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/laravel-hotjar.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/laravel-hotjar)
 
 This Laravel package seamlessly integrates Hotjar into your Blade templates. Easily capture heatmaps, session recordings, and feedback directly within your Laravel application, providing valuable insights into your website's user experience. This package simplifies the integration process, saving you time and effort. With minimal configuration, you can leverage Hotjar's powerful behavior analytics features to gain a clearer understanding of your audience and website usage.

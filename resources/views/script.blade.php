@@ -1,7 +1,7 @@
 @php($settings = app(\JeffersonGoncalves\Hotjar\Settings\HotjarSettings::class))
 
 @if(!empty($settings->site_id))
-    <script>
+    <script @if(\Illuminate\Support\Facades\Vite::cspNonce()) nonce="{{ \Illuminate\Support\Facades\Vite::cspNonce() }}" @endif>
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
             h._hjSettings={hjid:{{ $settings->site_id }},hjsv:{{ $settings->version }}};
